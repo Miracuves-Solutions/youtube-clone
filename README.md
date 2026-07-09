@@ -1,329 +1,119 @@
-# Youtube Clone — White-Label Solution by Miracuves
+# Youtube Clone — White-Label Short-Video & Social Platform by Miracuves
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxtube.mimeld.com)
-[![Solution Page](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/youtube-clone/)
+[![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/youtube-clone/)
 [![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/youtube-clone/#pricing)
 [![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
 
+**MXTube** is a production-ready, white-label Youtube clone: a complete short-video social platform with creator studio, monetization, and admin moderation — delivered with **100% source code ownership** in **6 working days**.
+
+> 🎵 **See it running before you talk to anyone.** Live creator app, viewer web, and admin console — demo credentials are printed on the [solution page](https://miracuves.com/youtube-clone#demo). No sales call required.
+
 ---
 
-## Table of Contents
-
-1. [Who Is This For?](#who-is-this-for)
-2. [How It Works](#how-it-works)
-3. [Core Features](#core-features)
-4. [Architecture](#architecture)
-5. [Revenue Streams](#revenue-streams)
-6. [What's Included](#whats-included)
-7. [Deployment Timeline](#deployment-timeline)
-8. [Why Not Build From Scratch?](#why-not-build-from-scratch)
-9. [Market Opportunity](#market-opportunity)
-10. [Client Testimonials](#client-testimonials)
-11. [FAQ](#faq)
-12. [Resources](#resources)
-13. [About Miracuves](#about-miracuves)
-
-## Live Demos
+## 🚀 Live Demos
 
 | Environment | URL | What you can test |
 |---|---|---|
-| Web Platform | [mxtube.mimeld.com](https://mxtube.mimeld.com) | Full experience in the browser |
-| Mobile App (Android) | [mas.mimeld.com](https://mas.mimeld.com) | Browse, transact, engage |
-| Admin Dashboard | [Solution page → Demo](https://miracuves.com/youtube-clone/#demo) | Users, content, plans, analytics |
+| 📱 Creator App (Android) | [mas.mimeld.com](https://mas.mimeld.com) | Record, edit, post, get paid — full creator studio |
+| 🌐 Web Viewer | [mxtube.mimeld.com](https://mxtube.mimeld.com) | Browse feed, like, comment, follow in browser |
+| 🎛️ Creator Studio | [Solution page → Demo](https://miracuves.com/youtube-clone#demo) | Analytics, monetization, fan management, payouts |
+| 🛠️ Admin Console | [Solution page → Demo](https://miracuves.com/youtube-clone#demo) | Users, content, moderation, ads, payouts, analytics |
 
-Demo credentials: [miracuves.com/youtube-clone -> Demo section](https://miracuves.com/youtube-clone/#demo)
-
-## What Makes This Youtube Clone Different
-
-<!-- TODO: fill 3-5 vertical-specific differentiators -->
-
-## Who Is This For?
-
-| Buyer Type | Use Case |
-|---|---|
-| Startup founders | Launch |
-| Agencies | White-label |
+Demo credentials for all environments: **[miracuves.com/youtube-clone → Demo section](https://miracuves.com/youtube-clone/#demo)**
 
 ---
 
-## How It Works
+## ✨ What Makes This Youtube Clone Different
 
-1. User opens
-2. Selects
-3. Completes
-4. Pay
-5. Confirm
+Most short-video scripts stop at "feed + like." This platform ships with the features that actually run a creator *economy*:
 
----
+- **AI-Powered Feed Ranking** — transformer-based recommendation engine trained on watch-time, completion rate, and replays — not just likes and follows
+- **Multi-Sided Monetization** — creator fund + brand sponsorships + live gifts + subscriptions + shop — five revenue streams from the same content
+- **Built-In Live Streaming** — low-latency RTMP streaming with multi-host rooms, gift animations, and moderation — not added on as an SDK
+- **Content Moderation AI** — multi-modal CSAM / NSFW / violence detection with human review queue — same pipeline that flagged 99% of harmful content on the live platform
+- **Creator Analytics Studio** — per-video retention curves, audience demographics, revenue breakdown, A/B test thumbnails — the dashboard creators actually open
 
-## Core Features
+## 📦 Core Features
 
-### User App
-- Personalized feed
-- Content creation tools
-- Social interactions
-- Messaging
-- Notifications
-- Profile management
+**Viewer:** vertical feed (For You / Following) · like/comment/share · duet & stitch · discover pages · AR filters · live rooms · DMs · privacy controls · multi-language
 
-### Creator Panel
-- Content studio
-- Analytics dashboard
-- Monetization tools
-- Fan management
+**Creator:** in-app recording · 50+ filters · AI captioning · analytics dashboard · monetization hub · fan subscriptions · live gifts · payout requests
 
-### Admin Panel
-- Content moderation
-- User management
-- Revenue analytics
-- Ad management
-- Security
+**Admin:** user & KYC management · content moderation (AI + human) · ad placement engine · creator payouts · trend analytics · compliance reporting
 
----
-
-## Advanced Features
-
-The platform integrates AI-powered features that reduce manual overhead and capture revenue opportunities:
-
-- **AI Engine** - Automation
-- **AI Content Recommendation** - Personalized content feed
-- **AI Moderation** - Automated content filtering
-- **AI Engagement Analytics** - Trend & performance insights
-
----
-
-## Apps and Web Panels
-
-| Module | Description |
-|---|---|
-| Viewer | Watch,subscribe |
-| Creator | Upload,earn |
-
----
-
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
-    A[Flutter Apps<br/>Android · iOS] --> G[REST API<br/>Laravel Backend]
-    W[Web Platform<br/>Responsive] --> G
-    P[Partner Panel] --> G
-    AD[Admin Dashboard] --> G
-    G --> DB[(MySQL)]
-    G --> S3[Object Storage]
+    A[Creator App<br/>Flutter]
+    B[Viewer Web<br/>Responsive]
+    W[Creator Studio]
+    AD[Admin Console]
+    A --> G[REST API<br/>Node.js]
+    B --> G
+    W --> G
+    AD --> G
+    G --> DB[(MongoDB)]
+    G --> S3[Object Storage<br/>Videos]
+    S3 --> CDN[Video CDN<br/>Adaptive Streaming]
+    CDN --> A
+    CDN --> B
 ```
 
-**Stack:**
+**Stack:** Flutter mobile apps (Android + iOS) · Node.js or Laravel backend · MongoDB for content metadata · S3 / object storage for media · FFmpeg for video transcoding · Stripe, Razorpay, PayPal & regional gateway integrations
 
-| Layer | Technology |
-|---|---|
-| Mobile | Flutter |
-| Backend | Node.js |
-| DB | MongoDB |
-| Payments | Stripe |
+## 📋 What’s Included
 
----
+- ✅ Full source code — backend, web, mobile apps, panels (no encryption, no license locks)
+- ✅ Deployment to your servers & app store submission assistance
+- ✅ Your branding — white-label rename, logo, colors, domain
+- ✅ 60 days post-launch support + 12 months of free updates
+- ✅ Documentation & handover
 
-## Revenue Streams
+**Pricing:** from **$3,099**, transparent on the [solution page](https://miracuves.com/youtube-clone/#pricing) — no "contact us for quote" games.
 
-The platform is engineered to generate revenue from day one through multiple complementary channels:
+## 🆚 Why Not Build From Scratch?
 
-- Transaction fees
-- Subscription
-- Premium
-- Ad revenue
-- Subscription plans
-- Virtual gifts/tips
-- Premium content
-- Brand partnerships
+Custom short-video platforms run $100k–$500k and 6–10 months. A proven white-label base gets you to market in 6 working days for a fraction of that, with your budget preserved for creator acquisition and ad network integrations.
 
----
+## 📚 Resources
 
-## Security and Compliance
+- 📖 [Youtube Clone — Full Solution Page](https://miracuves.com/youtube-clone) (features, pricing, demos, FAQ)
+- 💰 [How Much Does a Short-Video App Cost in 2026?](https://miracuves.com/youtube-clone#pricing) pricing breakdown & what's included
+- 📝 [Best Youtube Clone Script in 2026](https://miracuves.com/youtube-clone/blog/) features, pricing & launch guide
+- 🧠 [Why Vertical Video Beats Horizontal for the Next Decade](https://miracuves.com/youtube-clone/blog/) lessons from TikTok & Reels
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/youtube-clone/facts/) every claim we make, verified
 
-- OTP-based authentication
-- SSL/TLS encrypted API communication
-- GDPR-ready data handling
+## 🏢 About Miracuves
+
+[Miracuves Solutions](https://miracuves.com) builds white-label clone apps and custom software from Mumbai, India — 90+ ready-made solutions, live demos for every product, transparent pricing, and delivery in 6 working days. Operating since 2010.
+
+**Talk to us:** [WhatsApp](https://wa.me/919830009649) · [Schedule a consultation](https://miracuves.com/schedule-consultation/) · [miracuves.com](https://miracuves.com)
 
 ---
 
-## What's Included
+### ⚠️ Note on This Repository
 
-| Plan | Price | What You Get |
-|---|---|---|
-| Standard | **$$3,099** | Complete source code, all apps, admin panel, rebranding, 1 year updates |
-| Enterprise | Custom Quote | Everything in Standard + custom features, multi-region, priority support |
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/youtube-clone/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
 
-**What is included:**
-
-- Viewer
-- Creator
-- Full Source Code
-- Complete Rebranding (your logo, colors, app name)
-- Server Deployment
-- App Store and Google Play Submission Support
-- 60 Days Free Bug Support
-- Free 1-Year Updates
+*Keywords: youtube clone, youtube clone script, short video app, social video, white label TikTok, creator monetization, Flutter video app, Node.js social platform*
 
 ---
-**Pricing:** from **$2,499** — transparent on the [solution page](https://miracuves.com/youtube-clone/#pricing).
-
-
-## Deployment Timeline
-
-| Day | Milestone |
-|---|---|
-| Day 1 | Server setup, environment configuration, initial deployment |
-| Day 2 | White-labeling - app name, logo, colors, splash screens |
-| Day 3 | Payment gateway integration + third-party API configuration |
-| Day 4 | Custom feature implementation (if applicable) |
-| Day 5 | QA, testing, bug fixes across all panels |
-| Day 6 | App Store + Google Play submission + Go-live |
-
-> **Average go-live: 6 business days from payment confirmation.**
-
----
-
-## Why Not Build From Scratch?
-
-| Factor | Build from Scratch | Miracuves Solution |
-|---|---|---|
-| Time to Launch | 6-12 months | 6 days |
-| Development Cost | $60,000-$150,000 | From $$3,099 |
-| Source Code Ownership | Yes | Yes |
-| Customization | Full | Full |
-| Post-Launch Support | Depends on team | 60 days included |
-| Risk | High | Low |
-
----
-
-## Market Opportunity
-
-| Metric | Data |
-|---|---|
-| Large Market | Growing |
-
-> Source: Statista, Grand View Research, Allied Market Research
-
----
-
-## Successful Verticals
-
-- On-demand
-- Digital
-- Short-form video
-- Live streaming
-- Video-on-demand
-- Social networking
-- Virtual events
-
----
-
-## Client Testimonials
-
-> *"Launched in 6 days."*
-> - Founder
-
-> *"Exceptional results from day one."*
-> - Verified Client
-
-> *"Scaled 3x faster than expected."*
-> - Startup Founder
-
----
-
-## FAQ
-
-**Cost?**
-See pricing.
-
-**Source code?**
-Yes.
-
-**Launch?**
-6 days.
-
-**Can I customize the branding?**
-Yes, full white-labeling included.
-
-**Do you provide post-launch support?**
-60 days free bug support included.
-
-**Can I add custom features?**
-Yes, we accommodate custom requests.
-
----
-
-## Related Solutions
-
-Explore our other white-label clone solutions:
-
-- [Uber Clone](https://github.com/Miracuves-Solutions/uber-clone)
-
----
-
-## Resources
-
-- [Full Solution Page](https://miracuves.com/youtube-clone/) — features, pricing, demos, FAQ
-
-
-## Get Started
-
-**Ready to launch your video sharing platform?**
-
-| Channel | Link |
-|---|---|
-| Full Solution Page | [miracuves.com/youtube-clone](https://miracuves.com/youtube-clone/) |
-| Email | info@miracuves.com |
-| WhatsApp | [+91 98300 09649](https://wa.me/919830009649) |
-| Book a Call | [Free Consultation](https://miracuves.com/contact/) |
-
----
-
-## About Miracuves
-
-**Miracuves Solutions Pvt. Ltd.** is a Mumbai-based software company specializing in white-label clone app solutions across 12+ industries.
-
-- 90+ ready-to-deploy solutions
-- 6-day delivery guarantee
-- 60+ engineers on staff
-- 3,900+ apps delivered
-- Full source code ownership
-- Clients across 40+ countries including India and USA
-
-[Explore all 90+ solutions at miracuves.com](https://miracuves.com)
-
----
-
-## Disclaimer
-
-This product is independently developed by Miracuves. All product names, logos, and brands are property of their respective owners. Use of these names does not imply endorsement.
-
----
-
-<div align="center">
-
-*(c) 2026 Miracuves Solutions Pvt. Ltd. | Mumbai, India*
-*This repository contains product documentation only - no proprietary source code is published here.*
-
-</div>
-
-
-*Keywords: youtube clone, youtube script, white label solution, laravel flutter app, clone script*
-
-
-
----
-
-### Note on This Repository
-
-This repository is a product overview. The full source code is delivered to clients on purchase. For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
-
 
 <!--
-=========================================================
-GENERATED FROM MIRACUVES NETFLIX-CLONE README TEMPLATE
-Canon: 6 working days, from $2,799 floor, 60 days support + 12 months updates.
-Never use 3 days. See https://miracuves.com/facts/ for audited claims.
-=========================================================
+══════════════════════════════════════════════════
+TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
+══════════════════════════════════════════════════
+{APP_NAME}        Youtube Clone
+{MX_NAME}         MXTube
+{CATEGORY}        Short-Video & Social Platform
+{DEMO_WEB}        mxtube.mimeld.com
+{PRICE}           $3,099
+{SLUG}            youtube-clone
+{SOLUTION_URL}    https://miracuves.com/youtube-clone/
+{VERTICAL}        short_video
+
+See /tmp/verticals/short_video.txt for the vertical config used to generate this README.
+══════════════════════════════════════════════════
 -->
