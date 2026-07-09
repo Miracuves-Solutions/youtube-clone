@@ -71,7 +71,7 @@ flowchart LR
 - ✅ 60 days post-launch support + 12 months of free updates
 - ✅ Documentation & handover
 
-**Pricing:** from **$3,099**, transparent on the [solution page](https://miracuves.com/youtube-clone/#pricing) — no "contact us for quote" games.
+**Pricing:** from **$2,499**, transparent on the [solution page](https://miracuves.com/youtube-clone/#pricing) — no "contact us for quote" games.
 
 ## 🆚 Why Not Build From Scratch?
 
@@ -109,7 +109,7 @@ TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
 {MX_NAME}         MXTube
 {CATEGORY}        Short-Video & Social Platform
 {DEMO_WEB}        mxtube.mimeld.com
-{PRICE}           $3,099
+{PRICE}           $2,499
 {SLUG}            youtube-clone
 {SOLUTION_URL}    https://miracuves.com/youtube-clone/
 {VERTICAL}        short_video
