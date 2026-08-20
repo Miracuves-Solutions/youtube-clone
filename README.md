@@ -2,10 +2,10 @@
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxtube.mimeld.com)
 [![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/youtube-clone/)
-[![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/youtube-clone/#pricing)
-[![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
+[![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/youtube-clone/#features)
+[![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/youtube-clone/#features)
 
-**MXTube** is a production-ready, white-label Youtube clone: a complete short-video social platform with creator studio, monetization, and admin moderation — delivered with **100% source code ownership** in **6 working days**.
+**mxtube** is a production-ready, white-label Youtube clone: a complete short-video social platform with creator studio, monetization, and admin moderation — delivered with **100% source code ownership** in **6 working days**.
 
 > 🎵 **See it running before you talk to anyone.** Live creator app, viewer web, and admin console — demo credentials are printed on the [solution page](https://miracuves.com/youtube-clone#demo). No sales call required.
 
@@ -71,7 +71,7 @@ flowchart LR
 - ✅ 60 days post-launch support + 12 months of free updates
 - ✅ Documentation & handover
 
-**Pricing:** from **$2,499**, transparent on the [solution page](https://miracuves.com/youtube-clone/#pricing) — no "contact us for quote" games.
+**Pricing:** from **$2,499**, transparent on the [solution page](https://miracuves.com/youtube-clone/#features) — no "contact us for quote" games.
 
 ## 🆚 Why Not Build From Scratch?
 
@@ -80,10 +80,12 @@ Custom short-video platforms run $100k–$500k and 6–10 months. A proven white
 ## 📚 Resources
 
 - 📖 [Youtube Clone — Full Solution Page](https://miracuves.com/youtube-clone) (features, pricing, demos, FAQ)
-- 💰 [How Much Does a Short-Video App Cost in 2026?](https://miracuves.com/youtube-clone#pricing) pricing breakdown & what's included
-- 📝 [Best Youtube Clone Script in 2026](https://miracuves.com/youtube-clone/blog/) features, pricing & launch guide
-- 🧠 [Why Vertical Video Beats Horizontal for the Next Decade](https://miracuves.com/youtube-clone/blog/) lessons from TikTok & Reels
-- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/youtube-clone/facts/) every claim we make, verified
+- 💰 [How Much Does a Short-Video App Cost in 2026?](https://miracuves.com/youtube-clone#features) pricing breakdown & what's included
+- 📝 [Best Youtube Clone Script in 2026](https://miracuves.com/youtube-clone#features) features, pricing & launch guide
+- 🧠 [Why Vertical Video Beats Horizontal for the Next Decade](https://miracuves.com/youtube-clone#features) lessons from TikTok & Reels
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/youtube-clone#faq) every claim we make, verified
+- 💻 [Youtube Clone — Technical Stack](https://miracuves.com/youtube-clone#techstack) languages, databases, infra, payments, hosting
+- 🔄 [Youtube Clone — How It Works / User Flow](https://miracuves.com/youtube-clone#flow) step-by-step product walkthrough
 
 ## 🏢 About Miracuves
 
@@ -95,7 +97,7 @@ Custom short-video platforms run $100k–$500k and 6–10 months. A proven white
 
 ### ⚠️ Note on This Repository
 
-This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/youtube-clone/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/youtube-clone/#features). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
 
 *Keywords: youtube clone, youtube clone script, short video app, social video, white label TikTok, creator monetization, Flutter video app, Node.js social platform*
 
@@ -106,7 +108,7 @@ This repository is a product overview. The full source code is delivered to clie
 TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
 ══════════════════════════════════════════════════
 {APP_NAME}        Youtube Clone
-{MX_NAME}         MXTube
+{MX_NAME}         mxtube
 {CATEGORY}        Short-Video & Social Platform
 {DEMO_WEB}        mxtube.mimeld.com
 {PRICE}           $2,499
